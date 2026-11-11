@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import "@fontsource/vazirmatn/400.css";
+@import "@fontsource/vazirmatn/500.css";
+@import "@fontsource/vazirmatn/600.css";
+@import "@fontsource/vazirmatn/700.css";
+@import "@fontsource/vazirmatn/800.css";
+@import "@fontsource/syne/700.css";
+@import "@fontsource/syne/800.css";
+
+@theme {
+  --color-bg: #0c1014;
+  --color-surface: #151b22;
+  --color-elevated: #1e2630;
+  --color-fg: #f3eee4;
+  --color-muted: #a3988c;
+  --color-primary: #e0a24a;
+  --color-primary-fg: #1a1206;
+  --color-accent: #b7d1ae;
+  --color-border: #2c3542;
+  --font-sans: "Vazirmatn", "DejaVu Sans", sans-serif;
+  --font-display: "Syne", "Vazirmatn", sans-serif;
+  --radius-lg: 1rem;
+}
+
+@layer base {
+  html {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-bg);
+    color: var(--color-fg);
+    text-wrap: pretty;
+    overflow-x: clip;
+    min-height: 100dvh;
+  }
+  h1, h2, h3 { text-wrap: balance; }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) { cursor: pointer; }
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+  ::selection { background: #e0a24a55; color: var(--color-fg); }
+}
+
+.num { font-variant-numeric: tabular-nums; }
+.pb-nav { padding-bottom: calc(5.75rem + env(safe-area-inset-bottom)); }
+
+@keyframes orbit-spin {
+  to { transform: rotate(360deg); }
+}
+.orbit-spin { animation: orbit-spin 42s linear infinite; transform-origin: 50% 50%; }
+@media (prefers-reduced-motion: reduce) {
+  .orbit-spin { animation: none; }
+  * { scroll-behavior: auto !important; }
+}

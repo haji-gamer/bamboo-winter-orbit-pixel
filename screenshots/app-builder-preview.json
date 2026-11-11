@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "ORBIT · مدار یادگیری",
+      "hasCanvas": false,
+      "bodyTextLen": 1003,
+      "bodyTextHash": "4d778ec87e0bc9ddb7b4accb75a71d28fcd14bb670655e2ea2a08ab4704ccc75",
+      "bodyTextPrefix": "ORBIT مدار یادگیری خانه آکادمی تکنیک‌ها دستیار پروفایل مدار امرو",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "ORBIT · مدار یادگیری",
+      "hasCanvas": false,
+      "bodyTextLen": 937,
+      "bodyTextHash": "28b460f375384d32ac7137cb769587e440f08e26753ef2a1d0549857a50447ff",
+      "bodyTextPrefix": "ORBIT سلام، کاوشگر مسیر امروز ORBIT تمرین را تا تسلط ادامه می‌ده",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
